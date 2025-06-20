@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import ConnectButton from './ConnectButton'
+import ConnectMetaMask from "@/components/ConnectMetaMask";
 import { useData } from "@/contexts/showSideBarContext";
 import Sidebar from './Sidebar';
 import { usePathname } from 'next/navigation'
@@ -42,6 +43,7 @@ export default function LandingHeader() {
                                     onClick={() => setShowSideBar(!showSideBar)}
                                 />
                                 <ConnectButton />
+                                <ConnectMetaMask />
                             </div >
                         )
                     }

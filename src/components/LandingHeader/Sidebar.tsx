@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import React from 'react';
 import ConnectButton from './ConnectButton';
+import ConnectMetaMask from "@/components/ConnectMetaMask";
 import Image from 'next/image';
 import { useData } from "@/contexts/showSideBarContext";
 
@@ -37,6 +38,7 @@ export default function Sidebar() {
                 />
             </div>
             <ConnectButton showSideBar={showSideBar}/>
+            <ConnectMetaMask />
         </div>
     )
 }

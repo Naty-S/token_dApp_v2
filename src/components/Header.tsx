@@ -1,6 +1,7 @@
 import { FC } from "react";
 import Link from "next/link";
 import ConnectButton from "@/components/ConnectButton";
+import ConnectMetaMask from "@/components/ConnectMetaMask";
 
 const Header: FC = () => {
   return (
@@ -13,6 +14,7 @@ const Header: FC = () => {
         </Link>
         <div className="flex items-center gap-2">
           <ConnectButton />
+          <ConnectMetaMask />
         </div>
       </div>
     </header>
